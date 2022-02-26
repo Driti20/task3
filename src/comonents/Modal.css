@@ -1,14 +1,18 @@
-.modalBackground {
+.backgraund{
   width: 100vw;
   height: 100vh;
-  display: flex;
-  background-color: #282c34;
+  background:rgba(0,0,0,0.75);
   position: fixed;
   opacity: 1;
-  justify-content: center;
-  align-items: center;
   top: 0;
   left: 0;
+  z-index:1;
+}
+.modalBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: inherit;
 }
 .modalContainer {
   background-color: white;
@@ -16,6 +20,7 @@
   height: 500px;
   display: grid;
   border-radius: 10px;
+  z-index: 2;
 }
 .header {
   display: inline-flex;
